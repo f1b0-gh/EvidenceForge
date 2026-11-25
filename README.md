@@ -325,6 +325,8 @@ coverage gate, coding conventions, and external-parser validation requirements.
 
 ## Documentation
 
+- [Binary EVTX Export](docs/reference/evtx-export.md) — Serialize finalized Windows XML
+  into deterministic binary EVTX with source hashes and independent decoder tests.
 - [Scenario Reference](docs/reference/scenario-reference.md) — Scenario fields, includes, typed
   events, and validation rules
 - [Evidence Formats Reference](docs/reference/EVIDENCE_FORMATS.md) — Output layout, log types,
