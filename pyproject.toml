@@ -26,7 +26,7 @@ version = "2.1.2"
 description = "Generate realistic synthetic security logs for cybersecurity threat hunting training and research"
 readme = "README.md"
 license = "MIT"
-license-files = ["LICENSE"]
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
 authors = [
     { name = "Cisco Talos" }
 ]
@@ -63,6 +63,7 @@ dev = [
     "pytest-benchmark>=4.0.0",
     "ruff>=0.16.2",
     "pre-commit>=4.6.1",
+    "python-evtx==0.8.1",
 ]
 
 [build-system]

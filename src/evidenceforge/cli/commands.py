@@ -61,6 +61,7 @@ from rich.text import Text
 
 from evidenceforge import __version__
 from evidenceforge.cli.checkpoint_commands import checkpoint_app
+from evidenceforge.cli.evtx import export_evtx_command
 from evidenceforge.cli.generation_interrupt import GenerationInterruptController
 from evidenceforge.cli.pack_commands import pack_app
 from evidenceforge.composition import (
@@ -336,6 +337,7 @@ app = typer.Typer(
 )
 app.add_typer(pack_app, name="pack")
 app.add_typer(checkpoint_app, name="checkpoint")
+app.command("export-evtx")(export_evtx_command)
 console = Console()
 
 _STORAGE_SAMPLE_SIZE = 3
